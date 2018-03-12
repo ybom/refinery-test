@@ -1,0 +1,32 @@
+nb:
+  refinery:
+    plugins:
+      entitlements:
+        title: Entitlements
+    entitlements:
+      admin:
+        entitlements:
+          actions:
+            create_new: Lag en ny Entitlement
+            reorder: Endre rekkefølgen på Entitlements
+            reorder_done: Ferdig å endre rekkefølgen Entitlements
+          records:
+            title: Entitlements
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Entitlements enda. Klikk på "Lag en ny Entitlement" for å legge til din første entitlement.
+          entitlement:
+            view_live_html: Vis hvordan denne entitlement ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne entitlement
+            delete: Fjern denne entitlement permanent
+      entitlements:
+        show:
+          other: Andre Entitlements
+  activerecord:
+    attributes:
+      'refinery/entitlements/entitlement':
+        rank: Rank
+        total_weight_self: Total Weight Self
+        total_weight_self_plus_dependents: Total Weight Self Plus Dependents
+        pro_gear_weight: Pro Gear Weight
+        pro_gear_weight_spouse: Pro Gear Weight Spouse
+        slug: Slug

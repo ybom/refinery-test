@@ -1,0 +1,32 @@
+cs:
+  refinery:
+    plugins:
+      entitlements:
+        title: Entitlements
+    entitlements:
+      admin:
+        entitlements:
+          actions:
+            create_new: Přidat Entitlement
+            reorder: Řadit Entitlements
+            reorder_done: Konec řazení Entitlements
+          records:
+            title: Entitlements
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Entitlements. Zvolte "Přidat Entitlement" pro přidání prvního entitlement.
+          entitlement:
+            view_live_html: Zobrazit náhled entitlement<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit entitlement
+            delete: Smazat entitlement
+      entitlements:
+        show:
+          other: Další Entitlements
+  activerecord:
+    attributes:
+      'refinery/entitlements/entitlement':
+        rank: Rank
+        total_weight_self: Total Weight Self
+        total_weight_self_plus_dependents: Total Weight Self Plus Dependents
+        pro_gear_weight: Pro Gear Weight
+        pro_gear_weight_spouse: Pro Gear Weight Spouse
+        slug: Slug

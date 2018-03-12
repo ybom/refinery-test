@@ -1,0 +1,32 @@
+fr:
+  refinery:
+    plugins:
+      entitlements:
+        title: Entitlements
+    entitlements:
+      admin:
+        entitlements:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Entitlement
+            reorder: Réordonner les Entitlements
+            reorder_done: Fin de réordonnancement des Entitlements
+          records:
+            title: Entitlements
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Entitlement. Cliquer sur "Créer un(e) nouve(au/l/lle) Entitlement" pour créer votre premi(er/ère) entitlement.'
+          entitlement:
+            view_live_html: Voir ce(t/tte) entitlement <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) entitlement
+            delete: Supprimer définitivement ce(t/tte) entitlement
+      entitlements:
+        show:
+          other: Autres Entitlements
+  activerecord:
+    attributes:
+      'refinery/entitlements/entitlement':
+        rank: Rank
+        total_weight_self: Total Weight Self
+        total_weight_self_plus_dependents: Total Weight Self Plus Dependents
+        pro_gear_weight: Pro Gear Weight
+        pro_gear_weight_spouse: Pro Gear Weight Spouse
+        slug: Slug

@@ -1,0 +1,33 @@
+es:
+  refinery:
+    plugins:
+      entitlements:
+        title: Entitlements
+#        article: masculino/femenino
+    entitlements:
+      admin:
+        entitlements:
+          actions:
+            create_new: Crear nuevo entitlement
+            reorder: Reordenar entitlements
+            reorder_done: Reordenación de entitlements completada
+          records:
+            title: Entitlements
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay entitlements todavía. Pulsa en "Crear nuevo Entitlement" para crear tu primer entitlement.
+          entitlement:
+            view_live_html: Ver este entitlement como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este entitlement
+            delete: Borrar este entitlement para siempre
+      entitlements:
+        show:
+          other: Otros entitlements
+  activerecord:
+    attributes:
+      'refinery/entitlements/entitlement':
+        rank: Rank
+        total_weight_self: Total Weight Self
+        total_weight_self_plus_dependents: Total Weight Self Plus Dependents
+        pro_gear_weight: Pro Gear Weight
+        pro_gear_weight_spouse: Pro Gear Weight Spouse
+        slug: Slug

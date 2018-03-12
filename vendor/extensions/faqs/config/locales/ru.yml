@@ -1,0 +1,30 @@
+ru:
+  refinery:
+    plugins:
+      faqs:
+        title: Faqs
+    faqs:
+      admin:
+        faqs:
+          actions:
+            create_new: Добавить Faq
+            reorder: Изменить порядок Faqs
+            reorder_done: Закончить изменять порядок Faqs
+          records:
+            title: Faqs
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Faqs" не найдено. Нажмите "Добавить Faq" чтобы создать faq.
+          faq:
+            view_live_html: Просмотреть faq вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать faq
+            delete: Удалить faq навсегда
+      faqs:
+        show:
+          other: Другие Faqs
+  activerecord:
+    attributes:
+      'refinery/faqs/faq':
+        id: Id
+        question: Question
+        answer: Answer
+        category: Category

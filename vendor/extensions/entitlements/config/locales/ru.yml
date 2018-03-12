@@ -1,0 +1,32 @@
+ru:
+  refinery:
+    plugins:
+      entitlements:
+        title: Entitlements
+    entitlements:
+      admin:
+        entitlements:
+          actions:
+            create_new: Добавить Entitlement
+            reorder: Изменить порядок Entitlements
+            reorder_done: Закончить изменять порядок Entitlements
+          records:
+            title: Entitlements
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Entitlements" не найдено. Нажмите "Добавить Entitlement" чтобы создать entitlement.
+          entitlement:
+            view_live_html: Просмотреть entitlement вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать entitlement
+            delete: Удалить entitlement навсегда
+      entitlements:
+        show:
+          other: Другие Entitlements
+  activerecord:
+    attributes:
+      'refinery/entitlements/entitlement':
+        rank: Rank
+        total_weight_self: Total Weight Self
+        total_weight_self_plus_dependents: Total Weight Self Plus Dependents
+        pro_gear_weight: Pro Gear Weight
+        pro_gear_weight_spouse: Pro Gear Weight Spouse
+        slug: Slug

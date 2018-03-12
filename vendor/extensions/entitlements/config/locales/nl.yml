@@ -1,0 +1,32 @@
+nl:
+  refinery:
+    plugins:
+      entitlements:
+        title: Entitlements
+    entitlements:
+      admin:
+        entitlements:
+          actions:
+            create_new: Nieuwe Entitlement toevoegen
+            reorder: De volgorde van de Entitlements wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Entitlement-volgorde
+          records:
+            title: Entitlements
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Entitlements. Druk op 'Nieuwe Entitlement toevoegen' om de eerste toe te voegen.
+          entitlement:
+            view_live_html: Deze entitlement op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze entitlement
+            delete: Deze entitlement definitief verwijderen
+      entitlements:
+        show:
+          other: Andere Entitlements
+  activerecord:
+    attributes:
+      'refinery/entitlements/entitlement':
+        rank: Rank
+        total_weight_self: Total Weight Self
+        total_weight_self_plus_dependents: Total Weight Self Plus Dependents
+        pro_gear_weight: Pro Gear Weight
+        pro_gear_weight_spouse: Pro Gear Weight Spouse
+        slug: Slug

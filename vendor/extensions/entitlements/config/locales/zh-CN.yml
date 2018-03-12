@@ -1,0 +1,34 @@
+zh-CN:
+  refinery:
+    plugins:
+      entitlements:
+        title: Entitlements
+    entitlements:
+      admin:
+        entitlements:
+          actions:
+            create_new: 建立新的 Entitlement
+            reorder: 对 Entitlements 重新排序
+            reorder_done: 对 Entitlements 的重新排序结束
+          records:
+            title: Entitlements
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Entitlements yet. Click "Add New Entitlement" to add your first entitlement.
+            no_items_yet: 目前没有 Entitlements . 点击 "Add New Entitlement" 创建一个entitlement.
+          entitlement:
+            view_live_html: 查看 entitlement 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 entitlement
+            delete: 永久删除 entitlement
+      entitlements:
+        show:
+          other: 其他 Entitlements
+  activerecord:
+    attributes:
+      'refinery/entitlements/entitlement':
+        rank: Rank
+        total_weight_self: Total Weight Self
+        total_weight_self_plus_dependents: Total Weight Self Plus Dependents
+        pro_gear_weight: Pro Gear Weight
+        pro_gear_weight_spouse: Pro Gear Weight Spouse
+        slug: Slug

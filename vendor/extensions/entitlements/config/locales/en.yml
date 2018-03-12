@@ -1,0 +1,32 @@
+en:
+  refinery:
+    plugins:
+      entitlements:
+        title: Entitlements
+    entitlements:
+      admin:
+        entitlements:
+          actions:
+            create_new: Add New Entitlement
+            reorder: Reorder Entitlements
+            reorder_done: Done Reordering Entitlements
+          records:
+            title: Entitlements
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Entitlements yet. Click "Add New Entitlement" to add your first entitlement.
+          entitlement:
+            view_live_html: View this entitlement live <br/><em>(opens in a new window)</em>
+            edit: Edit this entitlement
+            delete: Remove this entitlement forever
+      entitlements:
+        show:
+          other: Other Entitlements
+  activerecord:
+    attributes:
+      'refinery/entitlements/entitlement':
+        rank: Rank
+        total_weight_self: Total Weight Self
+        total_weight_self_plus_dependents: Total Weight Self Plus Dependents
+        pro_gear_weight: Pro Gear Weight
+        pro_gear_weight_spouse: Pro Gear Weight Spouse
+        slug: Slug

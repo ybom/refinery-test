@@ -1,0 +1,32 @@
+tr:
+  refinery:
+    plugins:
+      entitlements:
+        title: Entitlements
+    entitlements:
+      admin:
+        entitlements:
+          actions:
+            create_new: Yeni Ekle Entitlement
+            reorder: Tekrar sirala Entitlements
+            reorder_done: Tekrar siralama tamamlandiEntitlements
+          records:
+            title: Entitlements
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Entitlements yok henuz.  Tikla "Yeni Ekle Entitlement" eklemek senin ilk entitlement.
+          entitlement:
+            view_live_html: Bunu canlu entitlement goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle entitlement
+            delete: Bunu Sil entitlement sonsuza dek
+      entitlements:
+        show:
+          other: Diger Entitlements
+  activerecord:
+    attributes:
+      'refinery/entitlements/entitlement':
+        rank: Rank
+        total_weight_self: Total Weight Self
+        total_weight_self_plus_dependents: Total Weight Self Plus Dependents
+        pro_gear_weight: Pro Gear Weight
+        pro_gear_weight_spouse: Pro Gear Weight Spouse
+        slug: Slug

@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="entitlements">
+    <% @entitlements.each do |entitlement| %>
+      <li>
+        <%= link_to entitlement.rank, refinery.entitlements_entitlement_path(entitlement) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

@@ -1,0 +1,57 @@
+<% content_for :body_content_title do %>
+  <%= @entitlement.rank %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Rank</h1>
+    <p>
+      <%=raw @entitlement.rank %>
+    </p>
+  </section>
+  <section>
+    <h1>Total Weight Self</h1>
+    <p>
+      <%=raw @entitlement.total_weight_self %>
+    </p>
+  </section>
+  <section>
+    <h1>Total Weight Self Plus Dependents</h1>
+    <p>
+      <%=raw @entitlement.total_weight_self_plus_dependents %>
+    </p>
+  </section>
+  <section>
+    <h1>Pro Gear Weight</h1>
+    <p>
+      <%=raw @entitlement.pro_gear_weight %>
+    </p>
+  </section>
+  <section>
+    <h1>Pro Gear Weight Spouse</h1>
+    <p>
+      <%=raw @entitlement.pro_gear_weight_spouse %>
+    </p>
+  </section>
+  <section>
+    <h1>Slug</h1>
+    <p>
+      <%=raw @entitlement.slug %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="entitlements">
+      <% @entitlements.each do |entitlement| %>
+        <li>
+          <%= link_to entitlement.rank, refinery.entitlements_entitlement_path(entitlement) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>
